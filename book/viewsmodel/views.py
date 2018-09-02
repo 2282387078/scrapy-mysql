@@ -3,8 +3,9 @@ from config.app import app
 from config.config import *
 import hashlib
 from models.model import *
+from viewsmodel.product import product
 #将admin蓝图注册进app
-
+app.register_blueprint(product,url_prefix='/product')
 
 
 # @app.before_request
